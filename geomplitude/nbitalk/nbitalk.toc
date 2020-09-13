@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{Last entry conditions}{2}{0}{1}
+\beamer@sectionintoc {2}{Algebraic letters and words in two-loop NMHV amplitudes}{5}{0}{2}
