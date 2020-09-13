@@ -298,9 +298,9 @@ The most generic term in box expansion:\\[5pt]
 \end{tikzpicture}
 $ \scriptsize \displaystyle
   \begin{cases}\displaystyle
-      u=\displaystyle\frac{x_{ad}^{2}x_{bc}^{2}}{x_{ac}^{2}x_{bd}^{2}},\quad v=\displaystyle\frac{x_{ab}^{2}x_{cd}^{2}}{x_{ac}^{2}x_{bd}^{2}}, \quad 
+      u_{abcd}=\displaystyle\frac{x_{ab}^{2}x_{cd}^{2}}{x_{ac}^{2}x_{bd}^{2}},\: v_{abcd}=\displaystyle\frac{x_{ad}^{2}x_{bc}^{2}}{x_{ac}^{2}x_{bd}^{2}}, \:
       \Delta_{abcd} =\sqrt{(1{-}u{-}v)^{2}-4uv}   \\[12pt]  
-      z_{a,b,c,d}=\frac{1}{2}(1+u-v+\Delta), \: 
+      z_{abcd}=\frac{1}{2}(1+u-v+\Delta), \: 
       \bar{z}_{a,b,c,d}=\frac{1}{2}(1+u-v+\Delta),
   \end{cases}
 $
@@ -312,19 +312,25 @@ For such a box,
 \end{align*}
 where $\alpha_{\pm}$ and $\delta_{\pm}$ are two solutions of Schubert problem $\alpha=(a{-}1 \,a)\cap (d\,d{-}1\,\gamma)$, $\gamma=(c{-}1 \,c)\cap (b\,b{-}1\,\alpha)$
 
-\uncover<2>{The square root will disappear when one mass corner become massless, {\it e.g.} $b=a{+1}$}
+The square root will disappear when one mass corner become massless, {\it e.g.} $b=a{+1}$
 \end{frame}
 
 \begin{frame}{Rationalize the square root $\Delta$}
 
-Only $f_{a,b,c,n+1}$ and $f_{1,b,c,n}$ survive under the $\dif^{2\vert3}Z_{n+1}$ integration,
-
+Only $f_{a,b,c,n+1}$ and $f_{1,b,c,n}$ survive under the $\dif^{2\vert3}Z_{n+1}$ integration, \newline
+however only the first kind is an obstacle
 since
+\begin{align*}
+\Delta_{1,b,c,n} &\xrightarrow[]{\mathcal{Z}_{n+1}\vert\vert \mathcal{Z}_{n}} 1-u_{1,b,c,n}\\
+\Delta_{a,b,c,n+1}&\xrightarrow[]{\mathcal{Z}_{n+1}\vert\vert \mathcal{Z}_{n}}\frac{\sqrt{A \tau^{2}+B\tau+C}}{\tau+u_{1,b,c,n}}
+\end{align*}
+$A,B,C$: Some quadratic polynomials of cross ratios. 
+
+This is just the classic problem to find a rational parameterization of a quadratic curve $y^{2}=x^{2}+ax+b$. \newline 
+This square root can be rationalized by a variable substitution $t(\tau)$ :
 \[
-\Delta_{1,b,c,n} \xrightarrow[]{\mathcal{Z}_{n+1}\vert\vert \mathcal{Z}_{n}} 1-\frac{x_{1b}^{2}x_{cn}^{2}}{x_{1c}^{2}x_{bn}^{2}}
-\]
-
-
+  \int_{0}^{\infty} R(\tau,\Delta(\tau))\:\dif\tau \xrightarrow[]{t(\tau)}\int_{\Delta_{abcn}}^{\Delta_{1abc}} R'(t)\:\dif t
+  \]
 % Under the collinear limit of $\mathcal{Z}_{n+1}\vert\vert \mathcal{Z}_{n}$, some $\Delta$'s become algebraic functions $\Delta(\tau)$ of $\tau$.
 
 % \begin{itemize}
@@ -344,7 +350,7 @@ since
 \begin{frame}{Algebraic letters of two-loop NMHV amplitudes}
 
 \footnotesize{
-  1-D $\tau$-integrals for these four masses introduce new algebraic letters
+  1-D $\tau$-integrals for these four masses introduce new algebraic letters\footnote{The algebraic letters always can and will be written in terms of $(a+\Delta)/(a-\Delta)$ such that their multiplicative relations don't involve rational letters.}
   \begin{equation*}
     \mathcal{X}_{a,b,c,d}^{\ast}:=\frac{(x^{\ast}_{a,b,c,d}+1)^{-1}-\bar{z}_{d,a,b,c}}{(x^{\ast}_{a,b,c,d}+1)^{-1}-z_{d,a,b,c}}\:, \qquad     
     \widetilde{\mathcal{X}}_{a,b,c,d}^{\ast}:=\frac{(x^{\ast}_{a,b,c,d-1}+1)^{-1}-z
@@ -375,7 +381,7 @@ Note that $\mathcal{X}_{a,b,c,d}^{\ast}$, $\mathcal{X}_{b,c,d,a}^{\ast}$, $\math
   \[
   m= \text{ the number of corners that contain only two particles}
   \]
-  These $\mathcal{X}$'s and $\widetilde{\mathcal{X}}$'s, together with $z/\bar{z}$ and $(1-z)/(1-\bar{z})$ give a cyclic and reflection invariant set of algebraic letters %whose logarithms are invariant up to a sign under the cyclic rotation $i\to i{+1}$ and the reflection $i\to n{-}i{+}1$. 
+  These $\mathcal{X}$'s and $\widetilde{\mathcal{X}}$'s, together with $z/\bar{z}$ and $(1-z)/(1-\bar{z})$ give a cyclic and reflection invariant set of algebraic letters. %whose logarithms are invariant up to a sign under the cyclic rotation $i\to i{+1}$ and the reflection $i\to n{-}i{+}1$. 
   
 \end{frame}
 
@@ -427,11 +433,14 @@ For example {\footnotesize{
   \end{aligned} 
 \end{equation*}
 }}
-here $A=(a{-1}\,a)$, $B=(b{-}1\,b)$, $C=(c{-}1\,c)$, $D=(d{-}1\,d)$
+here $A=(a{-1}\,a)$, $B=(b{-}1\,b)$, $C=(c{-}1\,c)$, $D=(d{-}1\,d)$.
+
+New rational letters first appearing in 9-point: $\langle(A) \cap(\overline{d}) B(C) \cap(\overline{d})\rangle$
 \end{frame}
 
 \begin{frame}{Algebraic Words}
- For non-degenerate $\mathcal{X}_{a,b,c,d}^{\ast}$'s, then the algebraic words reads
+  The first two entries of algebraic words always can consist of the symbol of the four-mass box.\newline
+ For non-degenerate $\mathcal{X}_{a,b,c,d}^{\ast}$'s as the third entry:
   \begin{align*}
       &\quad \mathcal{S}(I_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{c-1}\otimes x_{a,b,c,d}^{c-1} \,[a{-}1\,a\,b{-1}\,b\,c-1] \nonumber \\
       &-\mathcal{S}(I_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{c}\otimes x_{a,b,c,d}^{c} \,[a{-}1\,a\,b{-1}\,b\,c] \nonumber \\
@@ -440,10 +449,13 @@ here $A=(a{-1}\,a)$, $B=(b{-}1\,b)$, $C=(c{-}1\,c)$, $D=(d{-}1\,d)$
       &+\mathcal{S}(I_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{a-1}\otimes x_{a,b,c,d}^{a-1} \,[a{-}1\,b{-1}\,b\,c-1\,c] \nonumber \\
       &-\mathcal{S}(I_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{a}\otimes x_{a,b,c,d}^{a} \,[a\,b{-1}\,b\,c{-}1\,c]  \:,\label{Xalgebraicword}
   \end{align*}
-likewise for $\tilde{\mathcal{X}}$. Recall that 
-\begin{equation*}
+likewise for $\tilde{\mathcal{X}}$. Recall that \alert{
+$
   \mathcal{X}^{\ast}:=\frac{(x^{\ast}+1)^{-1}-\bar{z}}{(x^{\ast}+1)^{-1}-z}\:, 
-\end{equation*}
+$}
+
+The results for $z/\bar{z}$ or $(1-z)/(1-\bar{z})$ are slight lengthy, but the accompanied $R$ invariants always are the form of \alert{$[i\,i{+}1\,j\,j{+}1\,k]$}!
+
 \end{frame}
 
 \begin{frame}{A class of special components}
@@ -476,7 +488,6 @@ each of which depend on {\alert{many}} algebraic roots.{\footnotesize [\textcolo
 \end{frame}
 
 \section*{Thank You}
-
 
 \appendix
 \iffalse
