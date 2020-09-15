@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.29)  14 SEP 2020 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.29)  15 SEP 2020 11:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1005,23 +1005,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 586.
  (./geomplitude.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 586.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 586.
-Package rerunfilecheck Info: File `geomplitude.out' has not changed.
-(rerunfilecheck)             Checksum: 0B1B5491D24CBFFF60DFDB4CF341A3E2;231.
 
+
+Package rerunfilecheck Warning: File `geomplitude.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `geomplitude.out':
+(rerunfilecheck)             Before: 3686CBC338B57163A91C0A5FC67339F0;261
+(rerunfilecheck)             After:  0B1B5491D24CBFFF60DFDB4CF341A3E2;231.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 33363 strings out of 492982
- 816135 string characters out of 6134896
- 1030743 words of memory out of 5000000
- 36218 multiletter control sequences out of 15000+600000
+ 33364 strings out of 492982
+ 816145 string characters out of 6134896
+ 1030763 words of memory out of 5000000
+ 36219 multiletter control sequences out of 15000+600000
  17686 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,19n,98p,1878b,871s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on geomplitude.pdf (18 pages, 235275 bytes).
+Output written on geomplitude.pdf (18 pages, 235176 bytes).
 PDF statistics:
  233 PDF objects out of 1000 (max. 8388607)
  183 compressed objects within 2 object streams

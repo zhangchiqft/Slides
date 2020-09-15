@@ -216,7 +216,7 @@ They are
   [i_{1}\,i_{2}\,i_{3}\,i_{4}\,n{-}1]\,\bar{Q}\log\frac{\langle n{-}1(n\,1)(i_{1}\,i_{2})(i_{3}\,i_{4})\rangle}{\langle\bar{n}i_{1}\rangle\langle n{-}1\,i_{2}i_{3}i_{4}\rangle} \\
   &[i_{1}\,i_{2}\,i_{3}\,i_{4}\,n]\,\bar{Q}\log\frac{\langle n(1\,n{-1})(i_{1}\,i_{2})(i_{3}\,i_{4})\rangle}{\langle\bar{n}i_{1}\rangle\langle n\,i_{2}i_{3}i_{4}\rangle} \quad\text{with} \,1<i_{1}<i_{2}<i_{3}<i_{4}<n{-}1 \nonumber
 \end{align*}
-where $\langle a(bc)(de)(fg)\rangle :=\langle abde\rangle\langle acfg\rangle -\langle acde\rangle\langle abfg\rangle$}
+where $\langle a(bc)(de)(fg)\rangle =\langle abc(de)\cap(fga)\rangle=\langle abde\rangle\langle acfg\rangle -\langle acde\rangle\langle abfg\rangle$}
 
 3. \begin{equation*}
   [i_{1}\,i_{2}\,i_{3}\,i_{4}\,i_{5}]\,\bar{Q}\log\frac{\langle \bar{n}(i_{1}i_{2})\cap(i_{3}i_{4}i_{5})\rangle }{\langle \bar{n}i_{1}\rangle \langle i_{2}i_{3}i_{4}i_{5}\rangle } \:, \:\: [i_{1}\,i_{2}\,i_{3}\,i_{4}\,i_{5}]\,\bar{Q}\log\frac{\langle \bar{n}(i_{1}i_{2}i_{3})\cap(i_{4}i_{5})\rangle }{\langle \bar{n}i_{1}\rangle \langle i_{2}i_{3}i_{4}i_{5}\rangle } \:,
@@ -308,7 +308,7 @@ $
 For such a box, 
 \begin{align*}
   f_{a,b,c,d} &= \sum_{\pm}\frac{1-u-v\pm\Delta}{2\Delta}[\alpha_{\pm},b{-1},b,c-1,c][\delta_{\pm},d{-1},d,a{-}1,a] \\
-  \mathcal{I}_{a,b,c,d}^{\text{fin}}&= \operatorname{Li}_{2}(z)-\operatorname{Li}_{2}(\bar{z})+\frac{1}{2}\log(z\bar{z})\log{\frac{1-z}{1-\bar{z}}}
+  \mathcal{I}_{a,b,c,d}^{\text{fin}}&= \mathcal{I}_{a,b,c,d}=\operatorname{Li}_{2}(z)-\operatorname{Li}_{2}(\bar{z})+\frac{1}{2}\log(z\bar{z})\log{\frac{1-z}{1-\bar{z}}}
 \end{align*}
 where $\alpha_{\pm}$ and $\delta_{\pm}$ are two solutions of Schubert problem $\alpha=(a{-}1 \,a)\cap (d\,d{-}1\,\gamma)$, $\gamma=(c{-}1 \,c)\cap (b\,b{-}1\,\alpha)$
 
@@ -317,7 +317,7 @@ The square root will disappear when one mass corner become massless, {\it e.g.} 
 
 \begin{frame}{Rationalize the square root $\Delta$}
 
-Only $f_{a,b,c,n+1}$ and $f_{1,b,c,n}$ survive under the $\dif^{2\vert3}Z_{n+1}$ integration, \newline
+Only $f_{a,b,c,n+1}$ and $f_{1,b,c,n}$ survive under the $\dif^{2\vert3}\mathcal{Z}_{n+1}$ integration, \newline
 however only the first kind is an obstacle
 since
 \begin{align*}
@@ -446,12 +446,12 @@ New class of rational letters in 9-point: \alert{$
   The first two entries of algebraic words always can consist of the symbol of the four-mass box.\newline
  For non-degenerate $\mathcal{X}_{a,b,c,d}^{\ast}$'s as the third entry:
   \begin{align*}
-      &\quad \mathcal{S}(I_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{c-1}\otimes x_{a,b,c,d}^{c-1} \,[a{-}1\,a\,b{-1}\,b\,c-1] \nonumber \\
-      &-\mathcal{S}(I_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{c}\otimes x_{a,b,c,d}^{c} \,[a{-}1\,a\,b{-1}\,b\,c] \nonumber \\
-      &+ \mathcal{S}(I_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{b-1}\otimes x_{a,b,c,d}^{b-1} \,[a{-}1\,a\,b{-1}\,c-1\,c] \nonumber \\
-      &-\mathcal{S}(I_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{b}\otimes x_{a,b,c,d}^{c} \,[a{-}1\,a\,b\,c{-1}\,c] \nonumber \\
-      &+\mathcal{S}(I_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{a-1}\otimes x_{a,b,c,d}^{a-1} \,[a{-}1\,b{-1}\,b\,c-1\,c] \nonumber \\
-      &-\mathcal{S}(I_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{a}\otimes x_{a,b,c,d}^{a} \,[a\,b{-1}\,b\,c{-}1\,c]  \:,\label{Xalgebraicword}
+      &\quad \mathcal{S}(\mathcal{I}_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{c-1}\otimes x_{a,b,c,d}^{c-1} \,[a{-}1\,a\,b{-1}\,b\,c-1] \nonumber \\
+      &-\mathcal{S}(\mathcal{I}_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{c}\otimes x_{a,b,c,d}^{c} \,[a{-}1\,a\,b{-1}\,b\,c] \nonumber \\
+      &+ \mathcal{S}(\mathcal{I}_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{b-1}\otimes x_{a,b,c,d}^{b-1} \,[a{-}1\,a\,b{-1}\,c-1\,c] \nonumber \\
+      &-\mathcal{S}(\mathcal{I}_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{b}\otimes x_{a,b,c,d}^{c} \,[a{-}1\,a\,b\,c{-1}\,c] \nonumber \\
+      &+\mathcal{S}(\mathcal{I}_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{a-1}\otimes x_{a,b,c,d}^{a-1} \,[a{-}1\,b{-1}\,b\,c-1\,c] \nonumber \\
+      &-\mathcal{S}(\mathcal{I}_{a,b,c,d})\otimes \mathcal{X}_{a,b,c,d}^{a}\otimes x_{a,b,c,d}^{a} \,[a\,b{-1}\,b\,c{-}1\,c]  \:,\label{Xalgebraicword}
   \end{align*}
 likewise for $\tilde{\mathcal{X}}$. Recall that \alert{
 $
